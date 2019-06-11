@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 #include<math.h>
 int main(void) {
 	int num,c=0,i,j;
