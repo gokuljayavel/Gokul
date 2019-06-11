@@ -4,7 +4,7 @@
 int main(void) {
 long long int num;
 	scanf("%lld",&num);
-	if(isdigit(num)!=0){
+	if(isalpha(num)==0){
 	if(num>0)
 	printf("Positive");
 	else if(num==0)
