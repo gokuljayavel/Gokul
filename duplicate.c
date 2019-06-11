@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+	long long int num,i,l=0;
+	scanf("%lld",&num);
+	long long int arr[num],c[100]={0};
+	for(i=0;i<num;i++){
+	scanf("%lld ",&arr[i]);
+	c[arr[i]]++;}
+	for(i=0;i<100;i++){
+		if(c[i]>1 && l==0){
+		printf("%lld",i);
+		l=1;}
+		else if(c[i]>1)
+		printf(" %lld",i);
+	}
+	return 0;
+}
