@@ -1,5 +1,5 @@
 #include <stdio.h>
- 
+
 int main(void) {
 	unsigned long long int num,i,s=1;
 	scanf("%llu",&num);
