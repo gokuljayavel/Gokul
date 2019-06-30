@@ -10,7 +10,7 @@ int main(void) {
   	scanf("%d %d",&c,&b);
   	m=a[c-1];
   	for(j=c;j<b;j++){
-  		m=m|a[j];
+  		m=m^a[j];
   	}
   	ans[i]=m;
   }
