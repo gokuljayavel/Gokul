@@ -2,22 +2,21 @@
 #include<string.h>
 #include<stdlib.h>
 int main(void) {
-	int n,i,j;
+	int n,i,j,front=0;
 	char str[100000];
 	fgets(str,100000,stdin);
-	n=strlen(str)-1;
-	int a[n],top=0;
-	a[top]=str[0];
-	for(i=1;i<n;i++){
-		if(str[i]==a[top])
-		top--;
-		else{
-		top++;
+	n=strlen(str);
+	int a[n],top=-1;
+	for(i=0;i<n;i++){
+    	top++;
 		a[top]=str[i];}
-	}
-	if(top==0)
-	printf("YES");
-	else
-	printf("NO");
-	return 0;
+	for(i=0;i<n/2;i++){
+		if(a[top]==a[front]){
+		front++;
+		top--;}
+		else{
+			printf("NO");
+			return 0;}}
+		if(front==n/2)
+		printf("YES");
 }
