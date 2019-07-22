@@ -6,7 +6,7 @@ for i in range(n):
 		s = sum(arr[i:j])
 		r.append(s)
 		s = 0
-for i in l:
+for i in arr:
 	r.append(i)
 r.sort()
 print(r[-1])
