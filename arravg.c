@@ -13,7 +13,9 @@ int main(void) {
 			rsum+=a[j];
 		if(lsum*(n-i-1)==rsum*(i+1)){
 		printf("yes");
-		f=1;}
+		f=1;
+		return 0;
+		}
 	}
 	if(f==0)
 	printf("no");
