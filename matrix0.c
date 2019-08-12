@@ -15,9 +15,11 @@ int main(void) {
 				b[l][j]=0;
 				for(l=0;l<n;l++)
 				b[i][l]=0;}}}
-	for(i=0;i<m;i++,printf("\n"))
-		for(j=0;j<n;j++)
+	for(i=0;i<m;i++,printf("\n")){
+		for(j=0;j<n-1;j++)
 			printf("%d ",b[i][j]);
+			printf("%d",b[i][j]);
+		}
 	return 0;
 }
 
